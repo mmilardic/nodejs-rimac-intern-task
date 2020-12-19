@@ -1,0 +1,18 @@
+type Query {
+  helloWorld: String!
+  user(username: String!): User!
+  mostSearched(limit: Int): [User]!
+}
+
+type Mutation {
+    mostPopular: Boolean
+}
+
+type User {
+  username: String
+  email: String
+  searchedForCounter: Int
+  followers: Int
+  following: Int
+}
+
