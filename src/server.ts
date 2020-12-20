@@ -5,18 +5,15 @@ import schema from './schema';
 
 const app = express();
 const server = new ApolloServer({
-  schema,
-  // validationRules: [depthLimit(7)],
+  schema
 });
-
 
 server.applyMiddleware({ app, path: '/graphql' });
 
 const httpServer = createServer(app);
 
-httpServer.listen(
-    { port: 3000 },
-    (): void => console.log(`\n🚀      GraphQL is now running on http://localhost:3000/graphql`));
-
-console.log('Hey test');
+httpServer.listen({
+  port: 3000
+},
+  (): void => console.log(`\n🚀      GraphQL is now running on http://localhost:3000/graphql`));
 
