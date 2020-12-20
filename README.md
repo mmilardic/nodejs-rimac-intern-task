@@ -14,7 +14,7 @@ npm start
 In case where the port is unavailable, find an available one, and set the value at server.ts line 16.
 ###### Step 6 Test the functionalities:
 
-###### 1. Search user - be aware that some users don't have an email available over the API. In that case, an appropriate message will be returned. githubUsername presnets a placeholder.
+###### 1. Search user - be aware that some users don't have an email available over the API. In that case, an appropriate message will be returned. githubUsername presents a placeholder.
 
 ```typescript
 query {
@@ -63,9 +63,8 @@ mutation {
 - Using Typescript and best available library/dependency options
 
 ## Additional information
-- Email has to be accessed at https://api.github.com/users/{username}/events/public since the basic https://api.github.com/users/{username} endpoint never contains a value for email. 
+- Email has to be accessed at https://api.github.com/users/{username}/events/public since the basic https://api.github.com/users/{username} endpoint does not contain a value for email. 
 - When user is not found for the given username, null will be displayed for each field.
 - When mostSearched is called and returns empty array, it means that no user has been searched/found previously.
 - mostPopular mutation always returns true
-
 - For any other questions - please contact me at mxm8813@g.rit.edu
