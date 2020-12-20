@@ -1,4 +1,4 @@
-## How to run the project
+## Run the project
 ###### Step 1: Clone/download the project from github repository: https://github.com/mmilardic/nodejs-rimac-intern-task
 ###### Step 2: Open terminal in the project root folder. To install the dependencies run the next command: 
 ```bash
