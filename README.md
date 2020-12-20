@@ -1,7 +1,7 @@
 ## How to run the project
 ###### Step 1: Clone/download the project from github repository: https://github.com/mmilardic/nodejs-rimac-intern-task
-###### Step 2: Open terminal in the project root folder. To install the dependencies run the next command: npm install
-###### Step 3: To start the project, run the next command: npm start
+###### Step 2: Open terminal in the project root folder. To install the dependencies run the next command: **npm install**
+###### Step 3: To start the project, run the next command: **npm start**
 ###### Step 4: If the project started successfully, you will see the next message in the terminal/console:
 **🚀      GraphQL is now running on http://localhost:3000/graphql **
 ###### Step 5: Access the playground at http://localhost:3000/graphql 
@@ -55,4 +55,4 @@ mutation {
 - When mostSearched is called and returns empty array, it means that no user has been searched/found previously.
 - mostPopular mutation always returns true
 
-- For any other questions - please write at mxm8813@g.rit.edu
+- For any other questions - please contact me at mxm8813@g.rit.edu
