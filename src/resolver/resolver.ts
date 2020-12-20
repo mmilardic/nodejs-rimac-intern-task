@@ -15,7 +15,7 @@ export function getUser(username: string) {
     return res.then(async response => {
         let data = response.data;
         let email: string = await getUserEmail(username)
-        //username je unique identifier na githubu i zbog toga koristimo njega za provjeru
+        //username je unique identifier na githubu i zbog toga koristimo njega za provjeru (moze i email)
         let searchedUser = searchedUsers.find(userElement => userElement.username == username)
         let user: User;
         if (searchedUser !== undefined) {
@@ -65,7 +65,6 @@ function getUserEmail(username: string) {
 export function getMostSearched(limit: number): User[] {
     let listSize = searchedUsers.length;
     let returnList;
-
     if (limit !== undefined) {
         returnList = searchedUsers.sort((x, y) => (x.searchedForCounter > y.searchedForCounter) ? -1 : 1)
         listSize = limit;
@@ -79,5 +78,6 @@ export function resetSearchedCounters() {
     searchedUsers.forEach(user => {
         user.searchedForCounter = 0
     })
+    return true
 }
 

@@ -12,9 +12,8 @@ const resolverMap: IResolvers = {
         }
     },
     Mutation: {
-        mostPopular(_: void) {
-            ResolverFunctions.resetSearchedCounters();
-            return true
+        mostPopular(_: void): Boolean {
+           return ResolverFunctions.resetSearchedCounters();
         }
     }
 };
