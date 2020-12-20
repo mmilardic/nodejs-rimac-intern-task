@@ -16,7 +16,7 @@ In case where the port is unavailable, find an available one, and set the value 
 
 ###### 1. Search user - be aware that some users don't have an email available over the API. In that case, an appropriate message will be returned. githubUsername presents a placeholder.
 
-```typescript
+```graphql
 query {
   user(username: "githubUsername"){
     username
@@ -30,7 +30,7 @@ query {
 
 ###### 2. Search most searched users - limit is optional parameter
 
-```typescript
+```graphql
 query {
   mostSearched(limit: 10) {
     username
@@ -44,7 +44,7 @@ query {
 
 ###### 3. Set searchedForCounter values to 0
 
-```typescript
+```graphql
 mutation {
   mostPopular
 }
